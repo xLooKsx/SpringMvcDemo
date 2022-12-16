@@ -8,9 +8,10 @@
 </head>
 <body>
 	<h1>Hello World of Spring</h1>
-	<br>
 	Student Name: ${param.studentName}
-	<br>
+	<br><br/>
+	The message: ${studentName}
+	<br><br/>
 	<a href="/SpringMvcDemo">>Voltar</a>
 </body>
 </html>
