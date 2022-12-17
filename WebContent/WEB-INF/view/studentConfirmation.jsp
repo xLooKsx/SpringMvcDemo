@@ -8,7 +8,8 @@
 </head>
 <body>
 	<h2>The Student ${student.firstName} ${student.lastName} was registered</h2>
-	Country: ${student.country}
+	<p>Country: ${student.country} </p>
+	<p>Favorite Programming Language: ${student.favoriteLanguage} </p>
 	<br><br/>
 	<a href="/SpringMvcDemo">>Voltar</a>
 </body>

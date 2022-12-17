@@ -26,6 +26,15 @@
 			<form:option value="CA" label="Canada" /> --%>
 		</form:select>
 		<br><br>
+		Favorite Language:<br>
+<!-- 		values added by list -->
+		<form:radiobuttons path="favoriteLanguage" items="${student.favoriteLanguageOptions}"/>
+<%-- 		values added to radio button manually
+			<form:radiobutton path="favoriteLanguage" value="Java"/>Java<br> --%>
+<%-- 		<form:radiobutton path="favoriteLanguage" value="PHP"/>PHP<br> --%>
+<%-- 		<form:radiobutton path="favoriteLanguage" value="C#"/>C#<br> --%>
+<%-- 		<form:radiobutton path="favoriteLanguage" value="Ruby"/>Ruby --%>
+		<br><br>
 		<input type="submit" value="Submit">
 	</form:form>
 </body>
