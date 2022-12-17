@@ -35,6 +35,11 @@
 <%-- 		<form:radiobutton path="favoriteLanguage" value="C#"/>C#<br> --%>
 <%-- 		<form:radiobutton path="favoriteLanguage" value="Ruby"/>Ruby --%>
 		<br><br>
+		Operating Systems:<br>
+		<form:checkbox path="operatingSystems" value="Linus"/>Linux<br>
+		<form:checkbox path="operatingSystems" value="Windows"/>Windows<br>
+		<form:checkbox path="operatingSystems" value="Mac"/>Mac
+		<br><br>
 		<input type="submit" value="Submit">
 	</form:form>
 </body>
