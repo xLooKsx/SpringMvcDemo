@@ -14,6 +14,18 @@
 		<br><br>
 		Last Name: <form:input path="lastName"/>
 		<br><br>
+		Country:
+		<form:select path="country">
+<!-- 		values added by list -->
+			<form:options items="${student.countryOptions}"/>
+			<%-- values added to drop down list manually
+			<form:option value="BR" label="Brazil" /> 
+			<form:option value="FR" label="France" />
+			<form:option value="USA" label="United States of America" />
+			<form:option value="PT" label="Portugal" />
+			<form:option value="CA" label="Canada" /> --%>
+		</form:select>
+		<br><br>
 		<input type="submit" value="Submit">
 	</form:form>
 </body>
