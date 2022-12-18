@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import br.pessoal.springDemo.mvc.validation.CourseCode;
+
 public class Customer {
 	
 	private String firstName;
@@ -22,8 +24,17 @@ public class Customer {
 	@Pattern(regexp = "^[a-zA-z0-9]{5}", message = "only 5 chars/digits")
 	private String postalCode;
 	
+	//All those params and default values was defined in @interface class
+	@CourseCode(value = "CRS", message = "It's necessary to have CRS prefix to be a valid course")
+	private String courseCode;
 	
-	
+		
+	public String getCourseCode() {
+		return courseCode;
+	}
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
+	}
 	public String getPostalCode() {
 		return postalCode;
 	}

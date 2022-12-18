@@ -13,6 +13,8 @@
 		<br><br>
 		Postal code: ${customer.postalCode}
 		<br><br/>
+		Course code: ${customer.courseCode}
+		<br><br/>
 		<a href="/SpringMvcDemo">>Voltar</a>
 	</body>
 </html>
