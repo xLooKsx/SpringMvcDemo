@@ -36,6 +36,9 @@ public class CustomerController {
 			BindingResult bindingResult) {
 		
 		System.out.println("customer Last Name: |"+customer.getLastName()+"|");
+		
+		System.out.println("Binding result: "+ bindingResult);
+		
 		return bindingResult.hasErrors() ? "customerForm" : "customerConfirmation";
 	}
 }
